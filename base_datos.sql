@@ -18,6 +18,7 @@ CREATE TABLE usuarios (
 
 CREATE TABLE productos (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    id_categoria INT NOT NULL,
     nombre VARCHAR(150) NOT NULL,
     descripcion TEXT,
     precio DECIMAL(10, 2) NOT NULL,
@@ -54,6 +55,11 @@ CREATE TABLE estadisticas_desempeno (
     fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_pedido) REFERENCES pedidos(id) ON DELETE CASCADE
 );
+
+    CREATE TABLE categorias (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        nombre VARCHAR(100) NOT NULL
+    );
 
 -- ==============================================================================
 -- DATOS DE EJEMPLO PARA SISTEMA DE VENTAS Y ESTADÍSTICAS

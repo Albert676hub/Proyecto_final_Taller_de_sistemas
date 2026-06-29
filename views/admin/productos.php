@@ -58,7 +58,7 @@ $productos = $sentencia->fetchAll();
                             <td style="padding: 12px; color: #888;"><?php echo $producto['id']; ?></td>
                             <td style="padding: 12px;"><strong><?php echo htmlspecialchars($producto['nombre']); ?></strong></td>
                             <td style="padding: 12px; color: #555;"><?php echo htmlspecialchars($producto['categoria']); ?></td>
-                            <td style="padding: 12px; font-weight: 600;">$<?php echo number_format($producto['precio'], 2); ?></td>
+                            <td style="padding: 12px; font-weight: 600;">Bs. <?php echo number_format($producto['precio'], 2); ?></td>
                             <td style="padding: 12px;">
                                 <?php if($producto['stock'] > 10): ?>
                                     <span style="background-color: #e2e3e5; color: #383d41; padding: 4px 10px; border-radius: 12px; font-size: 0.85rem;">

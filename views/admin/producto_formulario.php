@@ -86,7 +86,7 @@ if ($id_producto) {
 
             <div class="fila-formulario">
                 <div class="grupo-formulario" style="flex: 1;">
-                    <label for="precio">Precio Unitario ($)</label>
+                    <label for="precio">Precio Unitario (Bs.)</label>
                     <input type="number" id="precio" name="precio" class="form-control" step="0.01" min="0.10" value="<?php echo htmlspecialchars($precio); ?>" required>
                 </div>
                 <div class="grupo-formulario" style="flex: 1;">
